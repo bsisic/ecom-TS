@@ -1,13 +1,13 @@
-import Image from 'next/image'
-import styles from '../styles/Header.module.scss';
-import logo from '../public/iphone.png'
+import Image from "next/image"
+import styles from "../styles/Header.module.scss"
+// import {logo} from "../public/iphone.png"
 
 export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.header__logo}>
-                <Image src={logo} alt="" width="38" height="38"  />
-                <h1 className={styles.header__title}>iPhone Shop</h1>
+                <Image src="/iphone.png" width="38" height="38" alt="iphone" />
+                <h1 className={styles.header__title}>iPhone&nbsp; Shop</h1>
             </div>
             <a className="header__summary snipcart-checkout snipcart-summary" href="#" style={{textDecoration: "none"}}>
                 <svg width="31" height="27" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
